@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="DenverForMen Automation Suite">
+    <listeners>
+        <listener class-name="com.denver.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Ecommerce Tests">
+        <classes>
+            <class name="com.denver.tests.HomeTest"/>
+            <class name="com.denver.tests.SearchTest"/>
+            <class name="com.denver.tests.ProductTest"/>
+            <class name="com.denver.tests.CartTest"/>
+        </classes>
+    </test>
+</suite>
+
+<!--testng.xml — selects which tests to execute.-->
+	
+ <!--What happens when 	you run this file?
+ TestNG loads the listener.
+- TestNG finds the classes listed under <classes>.
+- @BeforeMethod starts the browser before each test.
+- Each @Test method runs.
+- @AfterMethod closes the browser.
+- Failed tests trigger screenshot capture.
+-->
