@@ -37,21 +37,7 @@ public class Test_Dhanashri extends BaseClass {
 	}
 
 	@Test
-    public void TC16_verifyEmptyCartMessage() {
-        CartPage cart = new CartPage(driver);
-        cart.openCart();
-
-        if (cart.hasItems()) {
-            Assert.assertTrue(cart.getCurrentUrl().contains("/cart"));
-        } else {
-            Assert.assertTrue(
-                cart.isEmptyMessageDisplayed() ||
-                cart.getCurrentUrl().contains("/cart"),
-                "Expected the cart page to remain accessible");
-        }
-
-	@Test
-	public void TC17_verifyEmptyCartMessage() {
+	public void TC16_verifyEmptyCartMessage() {
 		CartPage cart = new CartPage(driver);
 		cart.openCart();
 
@@ -61,6 +47,27 @@ public class Test_Dhanashri extends BaseClass {
 			Assert.assertTrue(cart.isEmptyMessageDisplayed() || cart.getCurrentUrl().contains("/cart"),
 					"Expected the cart page to remain accessible");
 		}
+	}
+
+	@Test
+	public void TC17_verifyEmptyCartMessage() {
+		
+		CartPage cart = new CartPage(driver);
+		cart.openCart();
+
+		if (cart.hasItems()) {
+			Assert.assertTrue(cart.getCurrentUrl().contains("/cart"));
+		} else {
+			Assert.assertTrue(cart.isEmptyMessageDisplayed() || cart.getCurrentUrl().contains("/cart"),
+					"Expected the cart page to remain accessible");
+		}
+	}
+	@Test
+	public void TC19_verifyEmptyCartMessage2() {
+		CartPage cart = new CartPage(driver);
+		cart.openCart();
+
+		System.out.println("Message 2");
 
 	}
 }
