@@ -69,5 +69,10 @@ public class Test_Dhanashri extends BaseClass {
 
 		System.out.println("Message 2");
 
+	@Test
+	public void TC18_verifyEmptyCartMessage1() {
+		CartPage cart = new CartPage(driver);
+		cart.openCart();
+
 	}
 }
