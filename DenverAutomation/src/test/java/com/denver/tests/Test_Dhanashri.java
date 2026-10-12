@@ -62,5 +62,10 @@ public class Test_Dhanashri extends BaseClass {
 					"Expected the cart page to remain accessible");
 		}
 
+	@Test
+	public void TC18_verifyEmptyCartMessage1() {
+		CartPage cart = new CartPage(driver);
+		cart.openCart();
+
 	}
 }
