@@ -7,7 +7,7 @@ import com.denver.pages.ProductPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CartTest extends BaseClass {
+public class CartTest2Shital extends BaseClass {
 
 	//9.Test classes — execute scenarios
 	
